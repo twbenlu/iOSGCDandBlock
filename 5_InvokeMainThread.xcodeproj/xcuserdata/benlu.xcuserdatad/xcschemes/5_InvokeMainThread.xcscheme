@@ -5,6 +5,36 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "712CF47E1A98608100F32170"
+               BuildableName = "5_InvokeMainThread.app"
+               BlueprintName = "5_InvokeMainThread"
+               ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "712CF4971A98608100F32170"
+               BuildableName = "5_InvokeMainThreadTests.xctest"
+               BlueprintName = "5_InvokeMainThreadTests"
+               ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -12,7 +42,26 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "712CF4971A98608100F32170"
+               BuildableName = "5_InvokeMainThreadTests.xctest"
+               BlueprintName = "5_InvokeMainThreadTests"
+               ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "712CF47E1A98608100F32170"
+            BuildableName = "5_InvokeMainThread.app"
+            BlueprintName = "5_InvokeMainThread"
+            ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -23,6 +72,15 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "712CF47E1A98608100F32170"
+            BuildableName = "5_InvokeMainThread.app"
+            BlueprintName = "5_InvokeMainThread"
+            ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -32,6 +90,15 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "712CF47E1A98608100F32170"
+            BuildableName = "5_InvokeMainThread.app"
+            BlueprintName = "5_InvokeMainThread"
+            ReferencedContainer = "container:5_InvokeMainThread.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
