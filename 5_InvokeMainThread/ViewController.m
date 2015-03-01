@@ -20,15 +20,15 @@
 
      self.myProgress.progress = 0;
  
-    //取得主執行緒
+    //取得主執行緒的方式
     //dispatch_queue_t mainQueue = dispatch_get_main_queue();
-    //取得Concurrent執行緒
+    //取得Concurrent執行緒的方式
     //dispatch_queue_t q = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
-    //自訂執行緒
+    //自訂執行緒的方式
     dispatch_queue_t myQueue = dispatch_queue_create("myQueue", DISPATCH_QUEUE_CONCURRENT);
 
-//第一種寫法
+//第一種寫法直接把程式寫在Block裡面
 //    dispatch_async(myQueue, ^{
 //        int i;
 //        for (i=0; i<= 10; i+=1) {
@@ -40,7 +40,7 @@
 //        }
 //    });
     
-    //第二種寫法
+    //第二種寫法，把方法獨立成一個函式
     dispatch_async(myQueue,^{
         [self dosomething];
     });
@@ -52,12 +52,10 @@
 
 
 -(void)dosomething{
-    
-    //取得主執行緒
-    
     int i;
     for (i=0; i<= 10; i+=1) {
         [NSThread sleepForTimeInterval:1.0f];
+        //更新主執行緒上的UI控制項
         dispatch_async(dispatch_get_main_queue(), ^{
             [self.myProgress setProgress:i*0.1];
         });
