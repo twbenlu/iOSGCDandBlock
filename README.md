@@ -1,0 +1,2 @@
+# iOSGCDandBlock
+利用GCD來執行Block區塊的函數來非同步更新主執行緒裡面的UI控制項。
